@@ -1,0 +1,610 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/js/jquery-2.1.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/fonts/css/font-awesome.min.css">
+  <style>
+  body{
+    font-size: 16px;
+    font-family: "Roboto"; 
+    box-sizing: border-box; }
+
+    *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+  .clearfix:before, .clearfix:after {
+      content: " ";
+      display: table;
+  }
+  
+  Pseudo ::after element
+  
+  .clearfix:after {
+      clear: both;
+  }
+  
+  .clearfix:before, .clearfix:after {
+      content: " ";
+      display: table;
+  }
+
+
+
+
+
+
+    .mobile-page {
+      display: none;
+      padding-top: 10px;
+  }
+  .row {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+      max-width: 62.5rem;
+  }
+  #schedule-page p, #schedule-page h2 {
+      overflow: visible !important;
+      width: 93%;
+  }
+
+  p.page-title {
+      display: none !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
+      z-index: 2;
+
+  }
+  div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+      margin: 0;
+      padding: 0;
+  }
+
+   p {
+      line-height: 1.2;
+      color: #000;
+      word-break: break-word;
+      margin-bottom: 1.25rem;
+      text-rendering: optimizeLegibility;
+      font-weight: normal;
+      font-size: 1rem;
+      
+  }
+
+  #schedule-page .event-container {
+      border-top: 1px solid #000;
+      padding-top: 14px;
+  }
+
+  .centered {
+      text-align: center;
+  }
+
+
+
+  .columns {
+      position: relative;
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      float: left;
+  }
+  
+
+.column, .columns {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+}
+
+.small-4 {
+      width: 33.33333%;
+  }
+
+  .small-8 {
+      width: 66.66667%;
+  }
+
+  .small-12 {
+      width: 100%;
+  }
+
+
+  .chevron.chevron-right {
+      background-image: url(https://d3jzug80jq9bku.cloudfront.net/assets/rileyandgrey/images/chevron_right-f8d0c40fe7fe7148d7f708b0535379658d8207b39eb6054eab463e822e7ba5ca.png);
+  }
+
+  .chevron {
+      width: 23px;
+      height: 44px;
+      position: absolute;
+      cursor: pointer;
+      background-repeat: no-repeat;
+  }
+
+  img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto;
+  }
+
+  #schedule-page span {
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      white-space: nowrap;
+      line-height: 1;
+  }
+
+  #schedule-page span.venue {
+      white-space: pre-wrap;
+
+  }
+
+  
+
+  #schedule-page span {
+      min-height: 20px;
+      white-space: normal;
+  }
+
+  button {
+      border-style: solid;
+      border-width: 0;
+      cursor: pointer;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      line-height: normal;
+      margin: 0 0 1.25rem;
+      position: relative;
+      text-decoration: none;
+      
+      -webkit-appearance: none;
+      border-radius: 0;
+      
+      padding-top: 1rem;
+      padding-right: 2rem;
+      padding-bottom: 1.0625rem;
+      padding-left: 2rem;
+      font-size: 1rem;
+      background-color: #008CBA;
+      border-color: #007095;
+      color: #FFFFFF;
+      transition: background-color 300ms ease-out;
+  }
+
+  a.button {
+    text-decoration: none;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    margin: 0 0 1.25rem;
+      display: inline-block;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 1px;
+      font-size: 12px;
+      -webkit-font-smoothing: antialiased;
+      border-color: #bbb;
+      background: #000;
+      color: #fff;
+      width: 85%;
+      border-radius: 2px;
+      border: 1px solid #bbb;
+      padding: 10px 25px;
+      text-shadow: none;
+  }
+
+  [class*="column"]+[class*="column"]:last-child {
+      float: right;
+  }
+
+  p.copy {
+      padding-top: 20px;
+  }
+
+  /*section.main-section{
+    width: 320px;
+    height: 568px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+  }*/
+nav.tab-bar {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-bottom: 1px solid #595959;
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    -ms-transition: -ms-transform 500ms ease;
+    transition: transform 500ms ease;
+}
+  nav.tab-bar section.left-small {
+    padding: .4rem .45rem;
+    border: none;
+    box-shadow: none;
+}
+
+nav.tab-bar a.menu-icon {
+    width: 2rem;
+    height: 2rem;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.tab-bar .menu-icon {
+    text-indent: 2.1875rem;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    display: block;
+    padding: 0;
+    color: #FFFFFF;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+}
+
+nav.tab-bar section.tab-bar-section {
+    text-align: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.tab-bar-section {
+    padding: 0 0.625rem;
+    position: absolute;
+    text-align: center;
+    height: 2.8125rem;
+    top: 0;
+}
+
+h1.nav-title {
+    margin: 0;
+    text-transform: none;
+    font-family: "Flood", Times, serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #000;
+    text-align: center;
+
+}
+
+.overflow-safety {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+}
+
+
+
+
+  </style>
+
+
+
+
+</head>
+
+
+
+
+<nav class="tab-bar" data-topbar="" style="">
+    <section class="left-small">
+      <a class="left-off-canvas-toggle menu-icon" aria-expanded="true"><i class="fa fa-chevron-left" aria-hidden="true"></i></span> </a>
+    </section>
+    <section class="middle tab-bar-section">
+      <h1 class="nav-title menu-icon-text" style="display: none;">Menu</h1>
+      <div id="fittext-header" style="margin:0 auto; width: 80%;">
+        <h1 class="nav-title main-section-title overflow-safety even">Schedule</h1>
+      </div>
+    </section>
+  </nav>
+
+<section class="main-section" style="padding-top: 44px;">
+<div class="mobile-page" id="schedule-page" style="min-height: 523px; display: block;">
+          <section id="schedule">
+            <div class="row">
+  <p class="page-title">Schedule</p>
+</div>
+
+<div class="schedule-page1 row">
+    <div class="contain">
+      <div class="small-12 columns centered event-container" style="border-top:none;">
+        <h2 class="schedule-title" style="line-height:1em">Ring Ceremony + Sangeet</h2>
+        <p class="schedule-date">
+          Saturday
+          July 1,
+          7:00pm
+        </p>
+        <div class="chevron chevron-right" style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display: none;">
+        <div class="small-4 columns">
+            <img src="assets/img/residency.jpg" alt="Placeholder">
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Hotel Residency Towers T.Nagar Chennai-17</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/hPXxLGHyqsG2/" target="_blank" class="button address">View on Map</a>
+              </div>
+
+              <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div>
+              <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div>
+
+
+          </div>
+        </div>
+
+        <div class="small-12 columns no-space">
+          <p class="copy">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+        </div>
+      </div>
+    </div>
+    <div class="contain">
+      <div class="small-12 columns centered event-container" style="">
+        <h2 class="schedule-title" style="line-height:1em">Reception Of Barat + Anand Karaj</h2>
+        <p class="schedule-date">
+          Sunday
+          July 2,
+          10:30am
+        </p>
+        <div class="chevron chevron-right" style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display:none;">
+        <div class="small-4 columns">
+          <img src="assets/img/low_gd.jpg" alt="Placeholder">
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Gurudwara Gurunanak College, Velachery, Chennai</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/kHHLFvea97F2" target="_blank" class="button address">View on Map</a>
+              </div>
+
+              <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div>
+              <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div>
+
+
+          </div>
+        </div>
+
+        <div class="small-12 columns no-space">
+          <p class="copy">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+        </div>
+      </div>
+    </div>
+    <div class="contain">
+      <div class="small-12 columns centered event-container" style="">
+        <h2 class="schedule-title" style="line-height:1em">Lunch</h2>
+        <p class="schedule-date">
+          Sunday
+          July 2,
+          1:30pm
+        </p>
+        <div class="chevron chevron-right" style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display:none;">
+        <div class="small-4 columns">
+            <img src="assets/img/l_mandap.jpg" alt="Placeholder">
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Sri Raghavendra Kalyana Mandapam,40 Vishwanathpuram Main Road, Kodambakka, Chennai 60024</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/HirgmZSQYnM2" target="_blank" class="button address">View on Map</a>
+              </div>
+
+              <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div>
+              <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div>
+
+
+          </div>
+        </div>
+
+        <div class="small-12 columns no-space">
+          <p class="copy">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+        </div>
+      </div>
+    </div>
+    <div class="contain">
+      <div class="small-12 columns centered event-container" style="">
+        <h2 class="schedule-title" style="line-height:1em">Reception</h2>
+        <p class="schedule-date">
+          Sunday
+          July 2,
+          7:00pm
+        </p>
+        <div class="chevron chevron-right" style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display: none">
+        <div class="small-4 columns">
+            <img src="assets/img/l_mandap.jpg">
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Sri Raghavendra Kalyana Mandapam,40 Vishwanathpuram Main Road, Kodambakka, Chennai 60024</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/HirgmZSQYnM" target="_blank" class="button address">View on Map</a>
+              </div>
+
+              <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div>
+              <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div>
+
+
+          </div>
+        </div>
+
+        <div class="small-12 columns no-space">
+          <p class="copy">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.</p>
+        </div>
+      </div>
+    </div>
+
+        <div class="contain">
+      <div class="small-12 columns centered event-container" ">
+        <h2 class="schedule-title" style="line-height:1em">Muhurtham</h2>
+        <p class="schedule-date">
+          Monday
+          July 3,
+          6:00am
+        </p>
+        <div class="chevron chevron-right" style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display: none;">
+        <div class="small-4 columns">
+            <img src="assets/img/l_mandap.jpg" alt="Placeholder">
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Sri Raghavendra Kalyana Mandapam,40 Vishwanathpuram Main Road, Kodambakka, Chennai 60024</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/HirgmZSQYnM2" target="_blank" class="button address">View on Map</a>
+              </div>
+
+              <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div>
+              <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div>
+
+
+          </div>
+        </div>
+
+        <div class="small-12 columns no-space">
+          <p class="copy">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+        </div>
+      </div>
+    </div>
+
+        <div class="contain">
+      <div class="small-12 columns centered event-container"">
+        <h2 class="schedule-title" style="line-height:1em">Reception</h2>
+        <p class="schedule-date">
+          Thursday
+          July 6,
+          8:00pm
+        </p>
+        <div class="chevron chevron-right" style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display: none;">
+        <div class="small-4 columns">
+            <img src="assets/img/l_sayajee.jpg" alt="Placeholder">
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Hotel Sayajee VanVihar Road, Bhopal</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/jeLpedLgLWx" target="_blank" class="button address">View on Map</a>
+              </div>
+
+              <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div>
+              <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div>
+
+
+          </div>
+        </div>
+
+        <div class="small-12 columns no-space">
+          <p class="copy">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+        </div>
+      </div>
+    </div>
+  <div class="small-12 columns last-div"></div>
+</div>
+
+
+<script>
+  // analagous to the rg_repair_url ruby function
+  function repairURL(url) {
+    if (!url) return "";
+    if (url.substring(0, 3) == "http") return url;
+    return "http://"+url;
+  }
+
+  $(".event-container").click(function() {
+    $eventInfo = $(this).siblings(".event-info");
+    if($eventInfo.is(":visible")===true) {
+      $eventInfo.toggle();
+      return;
+    }
+    $(".event-info").hide();
+    $eventInfo.toggle();
+  })
+
+  $(".event-info").click(function() {
+    $(this).siblings(".event-container").click();
+  })
+
+</script>
+</section>
+        </div>
+        </section>

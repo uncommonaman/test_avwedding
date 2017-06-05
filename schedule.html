@@ -1,0 +1,588 @@
+<head>
+  <title>AMAN & VIGNA</title>
+  <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" />
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <style type="text/css">
+  body{
+    font-family: 'Roboto', sans-serif;
+
+    background: oldlace;
+    
+
+    
+
+  }
+  
+
+  li{
+    margin-right: 50px
+  }
+    .container {
+      width: 1200px !important;
+      margin: 0 auto;
+      position: relative;
+      padding: 0;
+    }
+
+  .container .sixteen.columns {
+    width: 1180px;
+}
+  
+  .container .columns {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  
+  .section-title {
+      text-align: center;
+    }
+
+ 
+
+    h2 {
+    font-family: "Roboto", serif;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    letter-spacing: initial;
+    line-height: 1;
+    font-weight: normal;
+    margin-top: 20px;
+    padding-bottom: 32px;
+    margin-bottom: 10px;
+
+  }
+
+  ul#schedule-navigation{
+    text-align: center;
+  }
+
+  li#sched-nav-0 {
+    margin: 20px;
+}
+  .container .fifteen.columns {
+    width: 880px;
+  }
+
+  #schedule-slider {
+    background-color: #fff;
+  }
+    .content {
+      outline-color: #ccc;
+      padding: 50px 30px;
+      outline: 1px solid #ccc;
+      height: 275px !important;
+     
+    }
+
+    .content h5 {
+    font-size: 2.5em;
+    text-transform: none;
+}
+
+.content h5 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+    ul{
+      margin: 0;
+    padding: 0;
+     border: 0; 
+     font-size: 100%; 
+     font: inherit; 
+     vertical-align: baseline; 
+    }
+
+     ul.navigation {
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+}
+
+    .details {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 255px;
+  }
+
+  .flex-direction-nav {
+    display: none;
+}
+
+.flex-direction-nav .flex-disabled {
+    opacity: 0 !important;
+    filter: alpha(opacity=0);
+    cursor: default;
+}
+
+.flex-direction-nav .flex-prev {
+    left: -50px;
+}
+
+.flex-direction-nav a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+    color: rgba(0,0,0,0.8);
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+ .flex-direction-nav .flex-next {
+    right: -50px;
+    text-align: right;
+}
+ul.navigation li {
+    text-align: center;
+}
+ul.navigation li.flex-active .circle-nav {
+    background-color: #181818;
+}
+
+ul.navigation li:hover {
+    cursor: pointer;
+}
+
+ul.navigation li .circle-nav {
+    border-color: #181818;
+    background-color: #fff;
+}
+
+ul.navigation li {
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    padding-top: 25px;
+    position: relative;
+}
+
+ ul.navigation li .circle-nav {
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    border: 2px solid #181818;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    top: -7px;
+    margin-left: -6px;
+}
+
+ul.navigation li h5 {
+    font-weight: normal;
+    text-transform: none;
+    background: -webkit-linear-gradient(top, #fd0b58 0px, #a32b68 100%);
+    background: linear-gradient(top, #fd0b58 0px, #a32b68 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+h5 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+
+ul.navigation li .date {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: bold;
+
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .picture {
+    position: relative;
+    height: 200;
+}
+
+
+.subtitle {
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.details p {
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: .9em;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.details h6 {
+    line-height: 1.2em;
+}
+
+a.button {
+    letter-spacing: 2px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: none;
+    text-transform: uppercase;
+    color: black;
+    background: #CDA053;
+    border: none;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 3px;
+    line-height: normal;
+
+    
+}
+
+::-webkit-scrollbar-track
+{
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+  /*border-radius: 10px;*/
+  background-color: white;
+}
+
+::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb
+{
+  /*border-radius: 10px;*/
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
+  background-color: #555;
+}
+
+
+
+  </style>
+
+</head>
+
+
+
+<div class="container">
+  <div class="sixteen columns section-title">
+    
+    <h2>EVENTS</h2>
+  </div>
+
+  <div class="fifteen columns outer-content" style="width:1200px
+;">
+    <div class="content" id="schedule-slider" style="height: 275px;">
+      <ul class="slides" style="height:275px">
+
+          <li id="sched-slide-0" style="height: 275px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+            <div class="picture" style="margin: 0;width:160px;float:left;">
+              <img class="circle" style="width: 150px;" src="assets/img/places/pc/residency.jpg" alt="Placeholder" draggable="false">
+            </div>
+
+            <div class="event-title" style="margin-top: 5px;height: 275px;width:600px;float:left;margin:0 32px;overflow-y:auto;">
+              <h5 style="line-height:1em">Ring Ceremony & Sangeet</h5>
+              <p>Summary coming soon...</p>
+            </div>
+
+            <div class="details" style="width:220px;float:left;">
+              <h6 class="subtitle">Hotel Residency Towers T.Nagar Chennai-17</h6>
+              <p>
+                Saturday <br>
+                July 1 <br>
+                7:00pm
+              </p>
+                <a href="https://goo.gl/maps/hPXxLGHyqsG2" target="_blank" class="button">View on Map</a>
+                <h6 class="subtitle">Attire</h6>
+                <p>Whatever is left in your luggage.</p>
+            </div>
+            <div style="clear:both"></div>
+          </li>
+
+
+
+          <li id="sched-slide-1" style="height: 275px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+            <div class="picture" style="margin: 0;width:160px;float:left">
+              <img class="circle" style="width: 150px;" src="assets/img/places/pc/low_gd.jpg" alt="Placeholder" draggable="false">
+            </div>
+
+            <div class="event-title" style="margin-top: 5px; height: 275px;width:600px;float:left;margin:0 32px;overflow-y:auto">
+              <h5 style="line-height:1em">Reception Of Barat & Anand Karaj</h5>
+              <p>Summary coming soon...</p>
+            </div>
+
+            <div class="details" style="width:220px;float:left">
+              <h6 class="subtitle">Gurudwara Gurunanak College, Velachery, Chennai</h6>
+              <p>
+                Sunday <br>
+                July 2 <br>
+                10:30am
+              </p>
+                <a href="https://goo.gl/maps/kHHLFvea97F2" target="_blank" class="button">View on Map</a>
+                <h6 class="subtitle">Attire</h6>
+                <p>Whatever is left in your luggage.</p>
+            </div>
+            <div style="clear:both"></div>
+          </li>
+
+
+
+          <li id="sched-slide-2" style="height: 275px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;" class="flex-active-slide">
+            <div class="picture" style="margin: 0;width:160px;float:left">
+              <img class="circle" style="width: 150px;" src="assets/img/places/pc/l_mandap.jpg" alt="Placeholder" draggable="false">
+            </div>
+
+            <div class="event-title" style="margin-top: 5px; height: 275px;width:600px;float:left;margin:0 32px;overflow-y:auto">
+              <h5 style="line-height:1em">Lunch</h5>
+              <p>Summary coming soon...</p>
+            </div>
+
+            <div class="details" style="width:220px;float:left">
+              <h6 class="subtitle">Sri Raghavendra Kalyana Mandapam,40 Vishwanathpuram Main Road, Kodambakka, Chennai 60024</h6>
+              <p>
+                Sunday <br>
+                July 2 <br>
+                1:30pm
+              </p>
+                <a href="https://goo.gl/maps/HirgmZSQYnM2" target="_blank" class="button">View on Map</a>
+                <h6 class="subtitle">Attire</h6>
+                <p>Whatever is left in your luggage.</p>
+            </div>
+            <div style="clear:both"></div>
+          </li>
+
+
+
+          <li id="sched-slide-3" style="height: 275px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+            <div class="picture" style="margin: 0;width:160px;float:left">
+              <img class="circle" style="width: 150px;" src="assets/img/places/pc/l_mandap.jpg" alt="Placeholder" draggable="false">
+            </div>
+
+            <div class="event-title" style="margin-top: 5px; height: 275px;width:600px;float:left;margin:0 32px;overflow-y:auto">
+              <h5 style="line-height:1em">Reception</h5>
+              <p>Summary coming soon...</p>
+            </div>
+
+            <div class="details" style="width:220px;float:left">
+              <h6 class="subtitle">Sri Raghavendra Kalyana Mandapam,40 Vishwanathpuram Main Road, Kodambakka, Chennai 60024</h6>
+              <p>
+                Sunday <br>
+                July 2 <br>
+                7:00pm
+              </p>
+                <a href="https://goo.gl/maps/HirgmZSQYnM2" target="_blank" class="button">View on Map</a>
+                <h6 class="subtitle">Attire</h6>
+                <p>Whatever is left in your luggage.</p>
+            </div>
+            <div style="clear:both"></div>
+          </li>
+
+                    <li id="sched-slide-4" style="height: 275px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+            <div class="picture" style="margin: 0;width:160px;float:left;">
+              <img class="circle" style="width: 150px;" src="assets/img/places/pc/l_mandap.jpg" alt="Placeholder" draggable="false">
+            </div>
+
+            <div class="event-title" style="margin-top: 5px;height: 275px;width:600px;float:left;margin:0 32px;overflow-y:auto;">
+              <h5 style="line-height:1em">Muhurtham</h5>
+              <p>Summary coming soon...</p>
+            </div>
+
+            <div class="details" style="width:220px;float:left;">
+              <h6 class="subtitle">Sri Raghavendra Kalyana Mandapam,40 Vishwanathpuram Main Road, Kodambakka, Chennai 60024</h6>
+              <p>
+                Monday <br>
+                July 3 <br>
+                6:00am
+              </p>
+                <a href="https://goo.gl/maps/HirgmZSQYnM2" target="_blank" class="button">View on Map</a>
+                <h6 class="subtitle">Attire</h6>
+                <p>Whatever is left in your luggage.</p>
+            </div>
+            <div style="clear:both"></div>
+          </li>
+
+
+                    <li id="sched-slide-5" style="height: 275px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+            <div class="picture" style="margin: 0;width:160px;float:left;">
+              <img class="circle" style="width: 150px;" src="assets/img/places/pc/l_sayajee.jpg" alt="Placeholder" draggable="false">
+            </div>
+
+            <div class="event-title" style="margin-top: 5px;height: 275px;width:600px;float:left;margin:0 32px;overflow-y:auto;">
+              <h5 style="line-height:1em">Reception</h5>
+              <p>Summary coming soon...</p>
+            </div>
+
+            <div class="details" style="width:220px;float:left;">
+              <h6 class="subtitle">Hotel Sayajee VanVihar Road, Bhopal</h6>
+              <p>
+                Thursday<br>
+                July 6 <br>
+                8:00pm
+              </p>
+                <a href="https://goo.gl/maps/jeLpedLgLWx" target="_blank" class="button">View on Map</a>
+                <h6 class="subtitle">Attire</h6>
+                <p>Whatever is left in your luggage.</p>
+            </div>
+            <div style="clear:both"></div>
+          </li>
+
+
+      </ul>
+    <ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul></div>
+  </div>
+
+  <ul style="display:block;width:1200px
+" class="fifteen columns navigation schedule" id="schedule-navigation">
+
+      <li style="display:inline-block; vertical-align:top; width: 16.5
+
+%;" id="sched-nav-0 " class="pm">
+        <div class="circle-nav pm"></div>
+        <h5>Ring Ceremony <br>
+         + <br>
+          Sangeet</h5>
+        <p class="date">
+          Saturday <br>
+          July 1 <br>
+          7:00pm
+        </p>
+      </li>
+
+      <li style="display:inline-block; vertical-align:top; width: 16.5
+
+%;" id="sched-nav-0 " class="am">
+        <div class="circle-nav am"></div>
+        <h5>Reception Of Barat <br>
+        + <br>
+        Anand Karaj</h5>
+        <p class="date">
+          Sunday <br>
+          July 2 <br>
+          10:30am
+        </p>
+      </li>
+
+      <li style="display:inline-block; vertical-align:top; width: 16.5
+
+%;" id="sched-nav-0 " class="flex-active am">
+        <div class="circle-nav pm"></div>
+        <h5>Lunch <br>
+        <br><br>
+        </h5>
+        <p class="date">
+          Sunday <br>
+          July 2 <br>
+          1:30pm
+        </p>
+      </li>
+
+      <li style="display:inline-block; vertical-align:top; width: 16.5
+
+%;" id="sched-nav-0 " class="pm">
+        <div class="circle-nav pm"></div>
+        <h5>Reception <br>
+        <br><br>
+        </h5>
+        <p class="date">
+          Sunday <br>
+          June 2 <br>
+          7:00pm
+        </p>
+      </li>
+      <li style="display:inline-block; vertical-align:top; width: 16.5
+
+%;" id="sched-nav-0 " class="am">
+        <div class="circle-nav am"></div>
+        <h5>Muhurtham <br>
+        <br><br>
+        </h5>
+        <p class="date">
+          Monday <br>
+          July 2 <br>
+          6:00am
+        </p>
+      </li>
+      <li style="display:inline-block; vertical-align:top; width: 16.5
+
+%;" id="sched-nav-0 " class="pm">
+        <div class="circle-nav pm"></div>
+        <h5>Reception <br>
+        <br><br>
+        </h5>
+        <p class="date">
+          Thursday <br>
+          June 6 <br>
+          8:00pm
+        </p>
+      </li>
+  </ul>
+</div>
+<script src="assets/js/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/jquery.flexslider-min.js"></script>
+
+<script>
+
+  // slider for schedule
+  var $schedNav = $('#schedule-navigation li');
+  $('#schedule-slider').flexslider({
+    animation: 'fade',
+    animationLoop: false,
+    smoothHeight: true,
+    slideshow: false,
+    animationSpeed: 150,
+    directionNave: false,
+    manualControls: '#schedule-navigation li',
+  });
+
+  $('.am').click(function(){
+    $('body').removeClass('night')
+
+    $('body').addClass('day')
+  });
+
+  $('.pm').click(function(){
+    $('body').removeClass('day')
+
+    $('body').addClass('night')
+  });
+
+
+
+  $(document).on("keyup",function(){
+    var target = $('div #schedule-navigation li')
+    if(target.hasClass('am flex-active')){
+      $('body').removeClass('night')
+      $('body').addClass('day')
+
+    }
+    if(target.hasClass('pm flex-active')){
+      $('body').removeClass('day')
+      $('body').addClass('night')
+
+    }
+    
+  });
+
+
+</script>

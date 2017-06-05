@@ -1,0 +1,79 @@
+header
+	height: 100vh
+	// background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("/assets/img/huge/p12.jpg")
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("/assets/img/bg1.jpg")
+	background-size: cover
+	padding-bottom: 10px
+
+	nav
+		float: right
+		padding: 10px 30px 10px 0
+
+		a
+			display: inline-block
+			margin-left: 20px
+			color: white
+			text-decoration: none
+	
+			font-size: 16px
+			font-weight: 700
+			padding-top: 5px
+			text-trans
+
+			&:hover
+				color: white
+				border-bottom: 1px solid white
+
+	h1
+		font:
+			size: 72px
+			weight: 700
+		color: white
+		text-transform: uppercase
+		letter-spacing: .05em
+		text-align: center
+		margin-bottom: 20px
+
+		clear: both
+		
+
+		span
+			display: inline-block
+			border: white solid 10px
+			padding: 0.2em 0.7em
+			margin-top: 40px
+
+	.kicker
+		text-align: center
+		@extend %small-bold
+		color: white
+		letter-spacing: 0.05em
+		font-size: 14px
+		line-height: 1
+
+@media (max-width: 640px)
+	header
+		background-position: 70% 20px, 73% 50%
+
+
+		nav
+			float: none
+			text-align: center
+			font-size: 14.2px
+
+		h1
+			padding-top: 0px
+			font-size: 36px
+			margin-top: 10px
+			
+
+			span
+				padding: 0.1em 0.1em
+				margin-top: 0
+
+
+
+
+
+
+

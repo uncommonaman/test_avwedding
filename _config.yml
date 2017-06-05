@@ -1,0 +1,14 @@
+# Build s ettings
+markdown: kramdown
+gems:
+  - jekyll-seo-tag
+
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
+permalink: pretty
+port: 3000
+sass:
+  sass_dir: assets/css
+  style: compressed

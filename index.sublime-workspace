@@ -1,0 +1,306 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lett",
+				"letters"
+			],
+			[
+				"le",
+				"letters"
+			],
+			[
+				"bo",
+				"border-top"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"a",
+				"alphabets"
+			],
+			[
+				"sta",
+				"startPosition"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"text",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/uncom/Desktop/Cards/Shuffle.html",
+		"/C/Users/uncom/Desktop/V2/app.js",
+		"/C/Users/uncom/Desktop/V2/Shuffle.html",
+		"/C/Users/uncom/Desktop/Cards/V2/app.js",
+		"/C/Users/uncom/Desktop/Cards/V2/styles.css",
+		"/C/Users/uncom/Desktop/Cards/V2/Shuffle.html",
+		"/C/Users/uncom/Desktop/New folder/createalphabets.html",
+		"/C/Users/uncom/Desktop/New folder/app.js",
+		"/C/Users/uncom/Desktop/New folder/Shuffle.html",
+		"/C/Users/uncom/Desktop/Shuffle.html",
+		"/C/Users/uncom/Desktop/app.js",
+		"/C/Users/uncom/Desktop/createalphabets.html",
+		"/C/Users/uncom/Desktop/Cards/app.js",
+		"/C/Users/uncom/Downloads/yo/app (1).js",
+		"/C/Users/uncom/Desktop/Assignment/V1/app.js",
+		"/C/Users/uncom/Desktop/ngDraggable-master/example-reorder.html",
+		"/C/Users/uncom/Desktop/Assignment/app.js",
+		"/C/Users/uncom/Desktop/Shuffle/Shuffle.html",
+		"/C/Users/uncom/Desktop/Assignment/V1/Shuffle.html",
+		"/C/Users/uncom/Downloads/Shuffle.html",
+		"/C/Users/uncom/Downloads/app.js",
+		"/C/Users/uncom/Desktop/Shuffle/app.js",
+		"/C/Users/uncom/Desktop/Shuffle/shuffle.css",
+		"/C/Users/uncom/Desktop/Assignment/Shuffle.css",
+		"/C/Users/uncom/Desktop/Assignment/Shuffle1.html",
+		"/C/Users/uncom/Desktop/ngDraggable-master/ngDraggable.js",
+		"/C/Users/uncom/Desktop/Assignment/shuffle.html",
+		"/C/Users/uncom/Desktop/WebDev/To do/assests/js/todos.js",
+		"/C/Users/uncom/Desktop/WebDev/To do/assests/css/todos.css",
+		"/C/Users/uncom/Desktop/WebDev/To do/index.html",
+		"/C/Users/uncom/Desktop/WebDev/jquery.html",
+		"/C/Users/uncom/Desktop/WebDev/color.html",
+		"/C/Users/uncom/Desktop/WebDev/color.js",
+		"/C/Users/uncom/Desktop/WebDev/movie.js",
+		"/C/Users/uncom/Desktop/WebDev/movie.html",
+		"/C/Users/uncom/Desktop/WebDev/solution.js",
+		"/C/Users/uncom/Desktop/WebDev/array.html",
+		"/C/Users/uncom/Desktop/WebDev/loop.js",
+		"/C/Users/uncom/Desktop/WebDev/loop.html",
+		"/C/Users/uncom/Desktop/WebDev/Bootstrap/gallary.html",
+		"/C/Users/uncom/Desktop/WebDev/blog.css",
+		"/C/Users/uncom/Desktop/WebDev/blog.html",
+		"/C/Users/uncom/Desktop/WebDev/board.css",
+		"/C/Users/uncom/Desktop/WebDev/board.html",
+		"/D/CS/Udemy/Web Dev Bootcamp/ColtSteele_WebDevCourse-master/CSS_Selector/selectors.css",
+		"/C/Users/uncom/Desktop/WebDev/selectors.css",
+		"/C/Users/uncom/Desktop/WebDev/selectorsExcercise.html",
+		"/C/Users/uncom/Desktop/WebDev/forms.html",
+		"/C/Users/uncom/Desktop/WebDev/Table.html",
+		"/C/Users/uncom/Desktop/WebDev/lists.html"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"draggableObjects",
+			"var letters = [\n\t{\n\t\tname:\"A\",\n\t\tid:1\n\t},\n\t\n\t{name:'B',\n\t\tid:2\n\t},\n\n\t{name:'C',\n\t\tid:3\n\t},\n\n\n\t{name:'D',\n\t\tid:4\n\t},\n\n\n\t{name:'E',\n\t\tid:5\n\t},\n\n\n\n\t{name:'F',\n\t\tid:6\n\t},\n\n\n\n\t{name:'G',\n\t\tid:7\n\t},\n\n\n\n\t{name:'H',\n\t\tid:8\n\t},\n\n\n\t{name:'I',\n\t\tid:9\n\t},\n\n\n\n\t{name:'J',\n\t\tid:10\n\t},\n\n\n\n\t{name:'K',\n\t\tid:11\n\t},\n\n\n\n\t{name:'L',\n\t\tid:12\n\t},\n\n\n\n\t{name:'M',\n\t\tid:13\n\t},\n\n\n\n\t{name:'N',\n\t\tid:14\n\t},\n\n\n\n\t{name:'O',\n\t\tid:15\n\t},\n\n\n\n\n\t{name:'P',\n\t\tid:16\n\t},\n\n\n\n\t{name:'Q',\n\t\tid:17\n\t},\n\n\n\n\t{name:'R',\n\t\tid:18\n\t},\n\n\n\n\t{name:'S',\n\t\tid:19\n\t},\n\n\n\n\t{name:'T',\n\t\tid:20\n\t},\n\n\n\n\t{name:'U',\n\t\tid:21\n\t},\n\n\n\t{name:'V',\n\t\tid:22\n\t},\n\n\n\n\t{name:'W',\n\t\tid:23\n\t},\n\n\n\t{name:'X',\n\t\tid:24\n\t},\n\n\n\t{name:'Y',\n\t\tid:25\n\t},\n\n\n\t{name:'Z',\n\t\tid:26\n\t},\n\n\n\t{name:'a',\n\t\tid:27\n\t},\n\n\t{name:'b',\n\t\tid:28\n\t},\n\t\n\t{name:'c',\n\t\tid:29\n\t},\n\n\t{name:'d',\n\t\tid:30\n\t},\n\n\n\t{name:'e',\n\t\tid:31\n\t},\n\n\n\t{name:'f',\n\t\tid:32\n\t},\n\n\n\n\t{name:'g',\n\t\tid:33\n\t},\n\n\n\n\t{name:'h',\n\t\tid:34\n\t},\n\n\n\n\t{name:'i',\n\t\tid:35\n\t},\n\n\n\t{name:'j',\n\t\tid:36\n\t},\n\n\n\n\t{name:'k',\n\t\tid:37\n\t},\n\n\n\n\t{name:'l',\n\t\tid:38\n\t},\n\n\n\n\t{name:'m',\n\t\tid:39\n\t},\n\n\n\n\t{name:'n',\n\t\tid:40\n\t},\n\n\n\n\t{name:'o',\n\t\tid:41\n\t},\n\n\n\n\t{name:'p',\n\t\tid:42\n\t},\n\n\n\n\n\t{name:'q',\n\t\tid:43\n\t},\n\n\n\n\t{name:'r',\n\t\tid:44\n\t},\n\n\n\n\t{name:'s',\n\t\tid:45\n\t},\n\n\n\n\t{name:'t',\n\t\tid:46\n\t},\n\n\n\n\t{name:'u',\n\t\tid:47\n\t},\n\n\n\n\t{name:'v',\n\t\tid:48\n\t},\n\n\n\t{name:'w',\n\t\tid:49\n\t},\n\n\n\n\t{name:'x',\n\t\tid:50\n\t},\n\n\n\t{name:'y',\n\t\tid:51\n\t},\n\n\n\t{name:'z',\n\t\tid:52\n\t}\n\n\t];\n\n",
+			"css"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\t\t\t\t\n",
+			"\t\t\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

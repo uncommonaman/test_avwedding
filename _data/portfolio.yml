@@ -1,0 +1,53 @@
+#Site settings
+
+#MENU ITEM LIST
+
+menu:
+- {name: Countdown, url: '#about-me'}
+- {name: Story, url: 'story.html'}
+- {name: Events, url: schedule.html}
+- {name: Photos, url: photos.html}
+- {name: RSVP, url: '#RSVP'}
+
+
+
+#............................
+#About Section 
+
+#SKILL LIST
+skills:
+- {name: Communication, value: '9'}
+- {name: Organization, value: '9'}
+- {name: Learning, value: '9'}
+- {name: Teaching, value: '9'}
+- {name: Planning, value: '9'}
+- {name: Visual Design, value: '9'}
+- {name: UX Design, value: '9'}
+- {name: Programming, value: '9'}
+
+
+#Change the site default images and content here:
+title: AMAN & VIGNA
+description: "July/3/Chennai"
+email: "artist@email"
+bg-img: hero-bg.jpg
+logo: logo.svg
+avatar: travitar.jpg
+blurb: <p><strong>Travis specializes in making things</strong> for human people. Most of the things he makes are <a href="">digital interfaces</a>, but he also puts effort into crafting <a href="">next-level beats</a> and <a href="">YouTube videos</a> about making codes happen.</p>
+
+
+#............................
+#Events Section 
+events:
+- {name: 'Ring Ceremony and Sangeet', time: '7:00 pm', date: '1', month: 'July',day: 'Saturday', link: 'https://goo.gl/maps/hPXxLGHyqsG2'}
+- {name: 'Reception of Barat & Anand Karaj', time: '10:30 am', date: '2', month: 'July',day: 'Sunday', link: 'https://goo.gl/maps/kHHLFvea97F2'}
+- {name: 'Lunch', time: '1:30 pm', date: '2', month: 'July',day: 'Sunday', link: 'https://goo.gl/maps/HirgmZSQYnM2'}
+- {name: 'Reception', time: '7:00 pm', date: '2', month: 'July', day: 'Sunday', link: 'https://goo.gl/maps/HirgmZSQYnM2'}
+- {name: 'Muhurtham', time: '6:00 am', date: '3', month: 'July',  day: 'Monday', link: 'https://goo.gl/maps/HirgmZSQYnM2'}
+- {name: 'Bhopal reception', time: '8:00 pm', date: '6', month: 'July', day: 'Thursday', link: 'https://goo.gl/maps/jeLpedLgLWx'}
+
+
+
+
+
+

@@ -1,0 +1,220 @@
+<html>
+
+<head>
+
+<!-- Magnific Popup core CSS file -->
+<title>AMAN & VIGNA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+<link rel="stylesheet" href="assets/css/main.css" />
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="assets/js/jquery-2.1.1.min.js"></script>
+
+<!-- Magnific Popup core JS file -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+
+
+<style type="text/css">
+body{
+	
+	background: RGBA(18,19,20,1.00);
+	 margin: 0;
+	 box-sizing: border-box;
+}
+h1{
+	
+	text-align: center;
+	color: white;
+	
+	margin: 0px auto 0px auto;
+	margin-bottom: 30px;
+}
+
+.heading{
+	margin-top: 20px;
+}
+span{
+	text-align: center;
+	color: white;
+	line-height: 40px;
+	display: block
+
+}
+
+
+.content a {
+    color: RGBA(242,242,242,1.00);
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    font-size: 2.5rem;
+    
+    text-align: left;
+    margin: 1rem;
+
+    }
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.responsive-image {
+  	width: 100%;
+}
+
+.cell {
+  margin: 1rem;
+}
+
+.cell img {
+  display: block;
+}
+
+.mfp-wrap {
+	height: 100% !important;
+}
+
+/*.cell{
+	
+	box-sizing: border-box;
+	padding: 1rem;
+	width: 100%;
+	display: block;
+}
+*/
+/*@media (min-width: 1000px) and (max-width: 1200px) {
+	.cell {
+		width: 100%;
+	}
+}*/
+
+@media (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+
+
+
+<body>
+<!--  <h1 style=" margin: .67em 0 text-align: center;"> -->
+<div class="heading">
+ <span style="font-size:25px; z-index: 1">A PICTURE IS WORTH</span>
+ <span style="font-size:30px; z-index: 2; "> A THOUSAND</span> 
+ <span style="font-size:40px;z-index: 3">WORDS</span>
+ </div>
+ <!-- </h1> -->
+ 
+ <div class="container">
+ <div class="content">
+ 	<a href="/">Back</a>
+ </div>
+ 	<div class="grid">
+ 		<div class="cell">
+	     	<a class="galleryItem" href="assets/img/huge/p1_lc.jpg"> <img src="assets/img/small/thumb1.jpg"  class="responsive-image"> </a> 
+	     </div>
+
+	     <div class="cell">
+	     	<a class="galleryItem" href="assets/img/huge/p2_lc.jpg"> <img src="assets/img/small/thumb2.jpg"  class="responsive-image"> </a> 
+	     </div>
+
+	     <div class="cell">
+	     	<a class="galleryItem" href="assets/img/huge/p3_lc.jpg"> <img src="assets/img/small/thumb3.jpg"  class="responsive-image"> </a> 
+	     </div>
+
+	     
+
+	     <div class="cell">
+	     	<a class="galleryItem" href="assets/img/huge/p4_lc.jpg"> <img src="assets/img/small/thumb4.jpg"  class="responsive-image"> </a> 
+	     </div>
+
+	     <div class="cell">
+	     	<a class="galleryItem" href="assets/img/huge/p5_lc.jpg"> <img src="assets/img/small/thumb5.jpg"  class="responsive-image"> </a> 
+	     </div>
+
+	     <div class="cell">
+	     	<a class="galleryItem" href="assets/img/huge/p6_lc.jpg"> <img src="assets/img/small/thumb6.jpg"  class="responsive-image"> </a> 
+	     </div>
+
+	     <div class="cell">
+	     	<a class="galleryItem" href="assets/img/huge/p10_lc.jpg"> <img src="assets/img/small/thumb10.jpg"  class="responsive-image"> </a>
+	     </div>
+
+	     <div class="cell">
+	     	<a class="galleryItem" href="assets/img/huge/p8_lc.jpg"> <img src="assets/img/small/thumb8.jpg"  class="responsive-image"> </a>
+	     </div>
+
+	     <div class="cell">
+	     	<a class="galleryItem" href="assets/img/huge/p9_lc.jpg"> <img src="assets/img/small/thumb9.jpg"  class="responsive-image"> </a> 
+	     </div>
+
+	     
+     </div>
+ </div>
+
+
+
+
+<!-- Javasscript files -->
+
+<script type="text/javascript">
+//initializing your javascript
+$(document).ready(function() {
+  // $('.image-link').magnificPopup({type:'image'});
+
+$('.galleryItem').magnificPopup({
+  type: 'image',
+  closeBtnInside: false,
+mainClass: 'mfp-with-zoom mfp-img-mobile',
+
+image:{
+  verticalFit: true
+},
+  gallery:{
+    enabled:true
+  }
+  
+  // other options
+});
+
+$("body").on("contextmenu", "img", function(e) {
+  return false;
+});
+
+  
+});
+
+</script>
+</body>
+
+</html>

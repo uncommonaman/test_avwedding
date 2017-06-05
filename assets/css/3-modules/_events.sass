@@ -1,0 +1,163 @@
+#mobile-cal
+	display: none
+.section-work
+	overflow-x: hidden
+	
+
+.work-belt
+	width: 100%
+	position: relative
+	left: 0%
+	+transition(all 800ms)
+
+.thumb-wrap,.work-wrap
+	width: 100%
+	float: left
+	
+
+
+
+
+.alt-section
+	background: $bgcolor
+
+	.thumb-container
+		max-width: 960px
+		margin: 0 auto
+		padding-bottom: 100px
+		+clearfix
+ 
+
+		.thumb-unit
+			display: block
+			border-radius: 5px
+			width: 25%
+			position: relative
+			background: pink
+			float: left
+			padding-top: 16%
+			overflow: hidden
+			margin: 25px 35px
+			time.icon
+				font-size: 1em
+				background-color: #fff
+				border-radius: 0.6em
+				box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd
+				overflow: hidden
+				-webkit-backface-visibility: hidden
+				-webkit-transform: rotate(0deg) skewY(0deg)
+				-webkit-transform-origin: 50% 10%
+				transform-origin: 50% 10%
+				
+			time.icon *
+			
+				display: block
+				width: 100%
+				font-size: 1em
+				font-weight: bold
+				font-style: normal
+				text-align: center
+		
+			
+			time.icon strong
+			
+				position: absolute
+				top: 0
+				padding: 0.4em 0
+				color: #fff
+				background-color: #c99065
+				border-bottom: 1px dashed #f37302
+				box-shadow: 0 2px 0 #c99065
+			
+			
+			time.icon em
+			
+				position: absolute
+				bottom: 0.3em
+				color: #c99065
+			
+			
+			time.icon span
+			
+				width: 100%
+				font-size: 4em
+				letter-spacing: -0.05em
+				color: #2f2f2f
+				position: relative
+				bottom: 60px
+		
+		
+
+			@media screen and (max-width: 760px)
+				width: 50%
+				padding-top: 26%
+
+
+			background-color: white
+				
+			+perspective(300)
+
+			.thumb-overlay
+				+position(absolute, -50% 0px null 0px)
+				height: 100%
+				background: fade-out($accent, 0.1)
+				text-align: center
+				+transition(500ms)
+				+display(flex)
+				+align-items(center)
+				+justify-content(space-around)
+				+transform(rotateX(90deg))
+				+transform-origin(center bottom)
+				opacity: 0
+
+
+				strong
+					display: block
+					padding: 0px 20px
+					color: white
+					font-weight: 300
+					text-transform: uppercase
+					font-size: 24px
+					line-height: 1.2
+
+
+
+			&:hover .thumb-overlay
+				+position(absolute, 0% 0px null 0px)
+				+transform(rotateX(0deg))
+				opacity: 1
+				
+
+@media (max-width: 840px)
+	.alt-section .thumb-container .thumb-unit
+		width: 40%
+		
+@media (max-width: 740px)
+	.alt-section .thumb-container .thumb-unit
+		width: 82%
+
+@media (max-width: 740px)
+	.alt-section
+		display: none
+	#mobile-cal
+		display: block
+
+
+
+
+		
+	
+	
+		
+	
+
+		
+
+
+
+				
+
+
+
+
+

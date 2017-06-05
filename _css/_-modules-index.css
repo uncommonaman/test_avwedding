@@ -1,0 +1,13 @@
+header {
+  height: 450px;
+  background: #ccc; }
+  header logo {
+    background: #999; }
+  header nav a {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+

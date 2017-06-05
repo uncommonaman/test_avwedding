@@ -1,0 +1,41 @@
+<section class="alt-section section-work">
+	<h3 id="cal" class="elegantshadow">Calender</h3>
+	<div class="work-belt">
+
+		<div class="thumb-wrap">
+			
+				<div class="thumb-container">
+					{% for project in site.data.portfolio.projects %}
+						<a href="https://goo.gl/maps/jeLpedLgLWx" class="thumb-unit">
+							<time datetime="2014-09-20" class="icon">
+							  <em>{{ project.day }}</em>
+							  <strong>{{ project.month }}</strong>
+							  <span>{{ project.date }}</span>
+							</time>
+
+							<div class="thumb-overlay">
+								<strong>{{ project.name }}</strong>
+								
+							</div>
+						</a>
+					{% endfor %}
+
+				</div>
+			
+		</div>
+	
+
+		<div class="work-wrap">
+			<div class="work-container">
+				<div class="work-return">{% include icons/icon-back.html %}</div>
+				<h4 class="project-title">Do Work</h4>
+				<div class="project-load"></div>
+				
+			</div>
+		</div>
+
+	</div>
+
+
+
+</section>

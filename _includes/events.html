@@ -1,0 +1,318 @@
+<!-- <div style="clear: both;"></div> -->
+<section class="alt-section section-work">
+	<h3 id="cal">Events</h3>
+	<div class="work-belt">
+
+		<div class="thumb-wrap">
+			
+				<div class="thumb-container">
+					{% for event in site.data.portfolio.events %}
+						<a href="{{ project.link }}" class="thumb-unit">
+							<time datetime="2014-09-20" class="icon">
+							  <em>{{ event.day }}</em>
+							  <strong>{{ event.month }}</strong>
+							  <span>{{ event.date }}</span>
+							</time>
+
+							<div class="thumb-overlay">
+								<p><strong>{{ event.name }}</strong><d style="color: white;font-size: 28px";><sup>{{event.time}}</sup></d></p>
+								
+							</div>
+						</a>
+					{% endfor %}
+
+				</div>
+			
+		</div>
+	
+
+		
+
+	</div>
+
+
+
+</section>
+
+<head>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<!-- <script src="assets/js/jquery-2.1.1.min.js"></script> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> -->
+<!-- <link rel="stylesheet" href="assets/css/fonts/css/font-awesome.min.css"> -->
+
+
+</head>
+
+
+<section id="mobile-cal">
+
+    <section class="middle tab-bar-section">      
+      <div id="fittext-header" style="margin:0 auto; width: 100%;">
+        <h3 class="nav-title main-section-title overflow-safety even">Events</h3>
+      </div>
+    </section>
+
+<section class="main-section" >
+  <div class="mobile-page" id="schedule-page" style="min-height: 523px; display: block;">
+    <section id="schedule">
+      <div class="row">
+        <p class="page-title">Schedule</p>
+      </div>
+
+  <div class="schedule-page1 row">
+    <div class="contain">
+      <div class="small-12 columns centered event-container rotate" style="">
+        <h2 class="schedule-title" style="line-height:1em">Ring Ceremony + Sangeet</h2>
+        <p class="schedule-date">
+          Saturday
+          July 1,
+          7:00pm
+        </p>
+        <div class="chevron chevron-right rot" style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display: none;">
+        <div class="small-4 columns">
+            <img src="assets/img/places/mobile/residency.jpg" alt="Placeholder" height="63" width="95" >
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Hotel Residency Towers T.Nagar Chennai-17</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/hPXxLGHyqsG2/" target="_blank" class="button address">View on Map</a>
+              </div>
+
+              <!-- <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div>
+              <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div> -->
+          </div>
+        </div>
+
+        <!-- <div class="small-12 columns no-space">
+          <p class="copy">An evening of food, spirits, music, dance, and mehndi to celebrate the union of families and close friends.</p>
+        </div> -->
+      </div>
+    </div>
+    <div class="contain">
+      <div class="small-12 columns centered event-container rotate" style="">
+        <h2 class="schedule-title" style="line-height:1em">Reception Of Barat + Anand Karaj</h2>
+        <p class="schedule-date">
+          Sunday
+          July 2,
+          10:30am
+        </p>
+        <div class="chevron chevron-right rot " style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display:none;">
+        <div class="small-4 columns">
+          <img src="assets/img/places/mobile/low_gd.jpg" alt="Placeholder" height="63" width="95">
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Gurudwara Gurunanak College, Velachery, Chennai</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/kHHLFvea97F2" target="_blank" class="button address">View on Map</a>
+              </div>
+
+              <!-- <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div> -->
+              <!-- <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div> -->
+
+
+          </div>
+        </div>
+
+        <!-- <div class="small-12 columns no-space">
+          <p class="copy">We would like to invite you to our Wedding Ceremony 'Anand Karaj'. It will be held at the Gurudwara Gurunanak College. There will be Breakfast and Tea/ Langar in the morning from 0:0 - 0:00. Rituals and prayers will take place from 0:00 am-00:00 am.</p>
+        </div> -->
+      </div>
+    </div>
+    <div class="contain">
+      <div class="small-12 columns centered event-container rotate" style="">
+        <h2 class="schedule-title" style="line-height:1em">Lunch</h2>
+        <p class="schedule-date">
+          Sunday
+          July 2,
+          1:30pm
+        </p>
+        <div class="chevron chevron-right rot " style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display:none;">
+        <div class="small-4 columns">
+            <img src="assets/img/places/mobile/l_mandap.jpg" alt="Placeholder" height="63" width="95">
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Sri Raghavendra Kalyana Mandapam,40 Vishwanathpuram Main Road, Kodambakka, Chennai 60024</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/HirgmZSQYnM2" target="_blank" class="button address">View on Map</a>
+              </div>
+
+     <!--          <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div>
+              <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div> -->
+
+
+          </div>
+        </div>
+
+       <!--  <div class="small-12 columns no-space">
+          <p class="copy">It is like a normal "lunch & dance" type of event. Loud "Bhangra" music will be played and drool inducing food will be served!</p>
+        </div> -->
+      </div>
+    </div>
+    <div class="contain">
+      <div class="small-12 columns centered event-container rotate" style="">
+        <h2 class="schedule-title" style="line-height:1em">Reception</h2>
+        <p class="schedule-date">
+          Sunday
+          July 2,
+          7:00pm
+        </p>
+        <div class="chevron chevron-right rot" style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display: none">
+        <div class="small-4 columns">
+            <img src="assets/img/places/mobile/l_mandap.jpg" height="63" width="95">
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Sri Raghavendra Kalyana Mandapam,40 Vishwanathpuram Main Road, Kodambakka, Chennai 60024</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/HirgmZSQYnM" target="_blank" class="button address">View on Map</a>
+              </div>
+
+              <!-- <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div>
+              <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div> -->
+
+
+          </div>
+        </div>
+
+        <!-- <div class="small-12 columns no-space">
+          <p class="copy">It is like a normal "dinner & dance" type of event. Loud "Bhangra" music will be played and drool inducing food will be served!</p>
+        </div> -->
+      </div>
+    </div>
+    <div class="contain">
+      <div class="small-12 columns centered event-container rotate">
+        <h2 class="schedule-title" style="line-height:1em">Muhurtham</h2>
+        <p class="schedule-date">
+          Monday
+          July 3,
+          6:00am
+        </p>
+        <div class="chevron chevron-right rot" style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display: none;">
+        <div class="small-4 columns">
+            <img src="assets/img/places/mobile/l_mandap.jpg" alt="Placeholder" height="63" width="95">
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Sri Raghavendra Kalyana Mandapam,40 Vishwanathpuram Main Road, Kodambakka, Chennai 60024</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/HirgmZSQYnM2" target="_blank" class="button address">View on Map</a>
+              </div>
+
+              <!-- <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div>
+              <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div> -->
+
+
+          </div>
+        </div>
+
+        <!-- <div class="small-12 columns no-space">
+          <p class="copy">Muhurat in a day is calculated based on Hindu Vedic Astrology. Muhurthams are of prime importance even now to enhance the success of performing the particular act.</p>
+        </div> -->
+      </div>
+    </div>
+    <div class="contain">
+      <div class="small-12 columns centered event-container rotate" style="border-bottom: 0px solid #000;">
+        <h2 class="schedule-title" style="line-height:1em">Reception</h2>
+        <p class="schedule-date">
+          Thursday
+          July 6,
+          8:00pm
+        </p>
+        <div class="chevron chevron-right rot" style="top:1.4rem;right:0.8rem;position:absolute;"></div>
+      </div>
+
+      <div class="event-info clearfix" style="display: none;">
+        <div class="small-4 columns">
+            <img src="assets/img/places/mobile/l_sayajee.jpg" alt="Placeholder" height="63" width="95">
+        </div>
+
+        <div class="small-8 columns event-text">
+          <div class="row">
+            <div class="small-12">
+              <span class="venue">Hotel Sayajee VanVihar Road, Bhopal</span>
+            </div>
+
+              <div class="small-12">
+                <a href="https://goo.gl/maps/jeLpedLgLWx" target="_blank" class="button address">View on Map</a>
+              </div>
+
+              <!-- <div class="small-12 columns no-space">
+                <span class="" style="font-weight:bold;">Attire</span>
+              </div>
+              <div class="small-12 columns no-space">
+                <span class="attire">Whatever is left in your luggage.</span>
+              </div> -->
+
+
+          </div>
+        </div>
+
+        <!-- <div class="small-12 columns no-space">
+          <p class="copy">Starts promptly at 8:00 PM. Dinner will be served buffet style, and will be interrupted possibly by laughter and a few tears. After our bellies are full, there will be dancing , kicked off by the couple. And you will dance till your feet start to ache from the sheer awesomeness of your dance moves. After that we will run away in a cloud of bubbles and you can vacate the premis for activities of your choice.</p>
+        </div> -->
+      </div>
+    </div>
+      <div class="small-12 columns last-div"></div>
+  </div>
+</section>
+</div>
+</section>
+</section>
